@@ -14,6 +14,8 @@ export class UserComponent implements OnInit{
     auth: any[];
     usuario: Auth;
     autenticacao: string;
+    editar_ok = false;
+    editar_erro = false;
 
     constructor(private userService: UserService,
         private route: ActivatedRoute, private router: Router) { }
@@ -31,8 +33,16 @@ export class UserComponent implements OnInit{
         });
     }
 
-    editar(){
-        //console.log(this.usuario);
+    editar(login){
+        this.userService.editUser(login.id, login.nome, login.email, login.senha, login.datanascimento, login.altura, login.peso, login.sexo)
+      .subscribe(user => {
+        this.editar_ok = true;
+        this.editar_erro = false;
+      },
+      erro => {
+        this.editar_ok = false;
+        this.editar_erro = true;
+      });
     }
 
 

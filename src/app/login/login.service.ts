@@ -7,7 +7,7 @@ import 'rxjs/add/operator/find';
 
 @Injectable()
 export class LoginService {
-
+  API_URL = "http://localhost:3000";
   constructor(private http: Http) { }
 
   auth(): Observable<any[]> {
@@ -18,5 +18,10 @@ export class LoginService {
   login(email: string, senha: string): Observable<any[]> {
         return this.http.get('http://localhost:3000/usuarios?email='+email+'&senha='+senha)
             .map(response => response.json() as any[]);
+  }
+
+  addUser(id: Number, nome: String, email: String, senha: String, datanascimento: Date, altura: Number, peso: Number, sexo: String): Observable<any> {
+    const user = {'nome': nome, 'email': email , 'senha': senha, 'datanascimento': datanascimento, 'altura': altura, 'peso': peso, 'sexo': sexo};
+    return this.http.post(this.API_URL + '/usuarios', user);
   }
 }
