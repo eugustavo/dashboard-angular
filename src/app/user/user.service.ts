@@ -22,8 +22,14 @@ export class UserService {
   editUser(id: Number, nome: String, email: String, senha: String, datanascimento: Date, altura: Number, peso: Number): Observable<any> {
     const user = {'id':id, 'nome': nome, 'email': email , 'senha': senha, 'datanascimento': datanascimento, 'altura': altura, 'peso': peso };
     console.log(user);
-    return this.http.put(`${this.API_URL}/usuarios/${id}`,user);
+    return this.http.patch(`${this.API_URL}/usuarios/${id}`,user);
     //return this.http.patch(this.API_URL + '/usuarios/' + id, user) ;
+  }
+
+  editAuth(id: Number, nome: String, email: String, senha: String, datanascimento: Date, altura: Number, peso: Number): Observable<any> {
+    const user = {'id':id, 'nome': nome, 'email': email , 'senha': senha, 'datanascimento': datanascimento, 'altura': altura, 'peso': peso };
+    console.log(user);
+    return this.http.patch(`${this.API_URL}/auth/${id}`,user);
   }
 
   getUser(id: number): Observable<any> {

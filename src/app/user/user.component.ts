@@ -3,6 +3,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { UserService } from './user.service';
 import { Auth } from './Auth';
 import 'rxjs/add/operator/switchMap';
+import { NgModel } from '@angular/forms';
+import {NgForm} from '@angular/forms';
 
 @Component({
     selector: 'user-cmp',
@@ -54,11 +56,23 @@ export class UserComponent implements OnInit {
                 })
 
             });
-         console.log(this.id, this.nome,this.email, this.senha, this.datanascimento, this.altura, this.peso )
+         //console.log(this.id, this.nome,this.email, this.senha, this.datanascimento, this.altura, this.peso )
     }
 
     editar() {
-        
+
+        // Editando AUTH
+        this.userService.editAuth(this.id, this.nome,this.email, this.senha, this.datanascimento, this.altura, this.peso)
+            .subscribe(user => {
+                this.editar_ok = true;
+                this.editar_erro = false;
+            },
+            erro => {
+                this.editar_ok = false;
+                this.editar_erro = true;
+            });
+
+        // Editando USUARIO
         this.userService.editUser(this.id, this.nome,this.email, this.senha, this.datanascimento, this.altura, this.peso)
             .subscribe(user => {
                 this.editar_ok = true;

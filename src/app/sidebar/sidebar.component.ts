@@ -13,8 +13,8 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
-    { path: 'user', title: 'Perfil',  icon:'ti-user', class: '' },
-    { path: 'table', title: 'Tabelas(exemplos)',  icon:'ti-view-list-alt', class: '' }
+    { path: 'table', title: 'Home',  icon:'ti-view-list-alt', class: '' },
+    { path: 'user', title: 'Perfil',  icon:'ti-user', class: '' }
 ];
 
 @Component({
