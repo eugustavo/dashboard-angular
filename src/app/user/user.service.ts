@@ -9,7 +9,7 @@ export class UserService {
   API_URL = "http://localhost:3000";
   constructor(private http: Http) { }
 
-  auth(): Observable<any[]> {
+  auth(): Observable<any> {
         return this.http.get('http://localhost:3000/auth')
             .map(response => response.json() as any[]);
   }
@@ -19,8 +19,14 @@ export class UserService {
             .map(response => response.json() as any[]);
   }
 
-  editUser(id: Number, nome: String, email: String, senha: String, datanascimento: Date, altura: Number, peso: Number, sexo: String): Observable<any> {
-    const user = {'nome': nome, 'email': email , 'senha': senha, 'datanascimento': datanascimento, 'altura': altura, 'peso': peso, 'sexo': sexo };
-    return this.http.patch(this.API_URL + '/usuarios/' + id, user);
+  editUser(id: Number, nome: String, email: String, senha: String, datanascimento: Date, altura: Number, peso: Number): Observable<any> {
+    const user = {'id':id, 'nome': nome, 'email': email , 'senha': senha, 'datanascimento': datanascimento, 'altura': altura, 'peso': peso };
+    console.log(user);
+    return this.http.put(`${this.API_URL}/usuarios/${id}`,user);
+    //return this.http.patch(this.API_URL + '/usuarios/' + id, user) ;
+  }
+
+  getUser(id: number): Observable<any> {
+    return this.http.get(this.API_URL + '/usuarios/' + id);
   }
 }

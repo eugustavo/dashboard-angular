@@ -4,199 +4,196 @@
       "id": 1,
       "nome": "Robson Silva da Sousa",
       "email": "robson321@gmail.com",
-	  "senha": "546256345",
-	  "datanascimento": "2001-11-22",
-	  "altura": "1.70",
-	  "peso": "70.5",
-	  "sexo": "masculino",
-	  "datacadastro": "2017-09-16",
-	  "status": "true"
+      "senha": "546256345",
+      "datanascimento": "2001-11-22",
+      "altura": "1.70",
+      "peso": "70.5",
+      "sexo": "masculino",
+      "datacadastro": "2017-09-16",
+      "status": "true"
     },
-	{
+    {
       "id": 2,
       "nome": "Cristina Ferreira Matos",
       "email": "crisferreira@gmail.com",
-	  "senha": "34253455",
-	  "datanascimento": "1999-08-13",
-	  "altura": "1.64",
-	  "peso": "69.2",
-	  "sexo": "feminino",
-	  "datacadastro": "2017-09-16",
-	  "status": "true"
+      "senha": "34253455",
+      "datanascimento": "1999-08-13",
+      "altura": "1.64",
+      "peso": "69.2",
+      "sexo": "feminino",
+      "datacadastro": "2017-09-16",
+      "status": "true"
     },
-	{
+    {
       "id": 3,
       "nome": "Sabrina Borges Machado",
       "email": "brinaborges@gmail.com",
-	  "senha": "445325243",
-	  "datanascimento": "2002-05-03",
-	  "altura": "1.74",
-	  "peso": "81.1",
-	  "sexo": "feminino",
-	  "datacadastro": "2017-09-16",
-	  "status": "true"
+      "senha": "445325243",
+      "datanascimento": "2002-05-03",
+      "altura": "1.74",
+      "peso": "81.1",
+      "sexo": "feminino",
+      "datacadastro": "2017-09-16",
+      "status": "true"
     },
-	{
+    {
       "id": 4,
       "nome": "Osvaldo Limeira Campos",
       "email": "osvaldocampos32@gmail.com",
-	  "senha": "ads432df",
-	  "datanascimento": "2003-11-11",
-	  "altura": "1.82",
-	  "peso": "99.2",
-	  "sexo": "masculino",
-	  "datacadastro": "2017-09-16",
-	  "status": "true"
+      "senha": "ads432df",
+      "datanascimento": "2003-11-11",
+      "altura": "1.82",
+      "peso": "99.2"
     },
-	{
+    {
       "id": 5,
       "nome": "Ronaldo Malone da Silva",
       "email": "malone332@gmail.com",
-	  "senha": "fads3asd32",
-	  "datanascimento": "2003-09-01",
-	  "altura": "1.74",
-	  "peso": "80.9",
-	  "sexo": "masculino",
-	  "datacadastro": "2017-09-16",
-	  "status": "true"
+      "senha": "fads3asd32",
+      "datanascimento": "2003-09-01",
+      "altura": "1.74",
+      "peso": "80.9",
+      "sexo": "masculino",
+      "datacadastro": "2017-09-16",
+      "status": "true"
     },
-	{
+    {
       "id": 6,
       "nome": "Marcos Nobre Castro Silva",
       "email": "marcosnobre26@gmail.com",
-	  "senha": "123456789",
-	  "datanascimento": "2001-12-02",
-	  "altura": "1.67",
-	  "peso": "60.5",
-	  "sexo": "masculino",
-	  "datacadastro": "2017-09-16",
-	  "status": "true"
-    }	
+      "senha": "123456789",
+      "datanascimento": "2001-12-02",
+      "altura": "1.67",
+      "peso": "60.5",
+      "sexo": "masculino",
+      "datacadastro": "2017-09-16",
+      "status": "true"
+    }
   ],
   "pesos": [
     {
       "id": 1,
       "idusuario": 1,
       "peso": "60.5",
-	  "datapesagem": "2017-10-16"
+      "datapesagem": "2017-10-16"
     },
-	{
+    {
       "id": 2,
       "idusuario": 1,
       "peso": "59.1",
-	  "datapesagem": "2017-10-26"
+      "datapesagem": "2017-10-26"
     },
-	{
+    {
       "id": 3,
       "idusuario": 2,
       "peso": "52.2",
-	  "datapesagem": "2017-10-16"
+      "datapesagem": "2017-10-16"
     },
-	{
+    {
       "id": 4,
       "idusuario": 2,
       "peso": "62.5",
-	  "datapesagem": "2017-10-26"
+      "datapesagem": "2017-10-26"
     },
-	{
+    {
       "id": 5,
       "idusuario": 2,
       "peso": "63.2",
-	  "datapesagem": "2017-10-26"
+      "datapesagem": "2017-10-26"
     },
-	{
+    {
       "id": 6,
       "idusuario": 3,
       "peso": "65.5",
-	  "datapesagem": "2017-10-16"
+      "datapesagem": "2017-10-16"
     },
-	{
+    {
       "id": 7,
       "idusuario": 3,
       "peso": "67.2",
-	  "datapesagem": "2017-10-26"
+      "datapesagem": "2017-10-26"
     },
-	{
+    {
       "id": 8,
       "idusuario": 4,
       "peso": "61.2",
-	  "datapesagem": "2017-10-16"
+      "datapesagem": "2017-10-16"
     },
-	{
+    {
       "id": 9,
       "idusuario": 4,
       "peso": "62.3",
-	  "datapesagem": "2017-10-26"
+      "datapesagem": "2017-10-26"
     },
-	{
+    {
       "id": 10,
       "idusuario": 5,
       "peso": "61.1",
-	  "datapesagem": "2017-10-16"
+      "datapesagem": "2017-10-16"
     },
-	{
+    {
       "id": 11,
       "idusuario": 5,
       "peso": "60.6",
-	  "datapesagem": "2017-10-16"
+      "datapesagem": "2017-10-16"
     },
-	{
+    {
       "id": 12,
       "idusuario": 5,
       "peso": "63.9",
-	  "datapesagem": "2017-10-26"
+      "datapesagem": "2017-10-26"
     },
-	{
+    {
       "id": 13,
       "idusuario": 6,
       "peso": "62.1",
-	  "datapesagem": "2017-10-16"
+      "datapesagem": "2017-10-16"
     },
-	{
+    {
       "id": 14,
       "idusuario": 6,
       "peso": "59.1",
-	  "datapesagem": "2017-10-26"
+      "datapesagem": "2017-10-26"
     }
   ],
   "balancas": [
     {
       "id": 1
     },
-	{
+    {
       "id": 2
     },
-	{
+    {
       "id": 3
     },
-	{
+    {
       "id": 4
     },
-	{
+    {
       "id": 5
     },
-	{
+    {
       "id": 6
     },
-	{
+    {
       "id": 7
     },
-	{
+    {
       "id": 8
     }
   ],
   "auth": [
-	{
-		"id": 4,
-		"nome": "Osvaldo Limeira Campos",
-		"email": "osvaldocampos32@gmail.com",
-		"senha": "ads432df",
-		"datanascimento": "2003-11-11",
-		"altura": "1.82",
-		"peso": "99.2",
-		"sexo": "masculino",
-		"datacadastro": "2017-09-16",
-		"status": "true"
-	}
+    {
+      "id": 4,
+      "nome": "Osvaldo Limeira Campos",
+      "email": "osvaldocampos32@gmail.com",
+      "senha": "ads432df",
+      "datanascimento": "2003-11-11",
+      "altura": "1.82",
+      "peso": "99.2",
+      "sexo": "masculino",
+      "datacadastro": "2017-09-16",
+      "status": "true"
+    }
   ]
 }
